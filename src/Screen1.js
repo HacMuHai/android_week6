@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Pressable } from 'react-native';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-export default function App() {
+export default function App({navigation}) {
     return (
         <View style={{ flex: 1, backgroundColor: 'white' }}>
             <View style={{ flex: 2, justifyContent: 'flex-end', alignItems: 'center' }}>
@@ -27,7 +27,7 @@ export default function App() {
             </View>
 
             <View style={{ flex: 3, justifyContent: 'center', alignItems: 'center' }}>
-                <Pressable style={{height:61,width:"85%", justifyContent: 'center',backgroundColor:'#E94141',borderRadius:30}}>
+                <Pressable style={{height:61,width:"85%", justifyContent: 'center',backgroundColor:'#E94141',borderRadius:30}} onPress={()=>navigation.navigate('Screen2')}>
                     <Text style={{ fontFamily: 'VT323', fontSize: 27, fontWeight: 400, textAlign: 'center',color:'white' }}>Get Started</Text>
                 </Pressable>
             </View>

@@ -12,42 +12,48 @@ export default function App({navigation,route}) {
             img: require('../assets/bitwo-removebg-preview.png'),
             name: 'Pinarello',
             price: '1800',
-            type: 1
+            type: 1,
+            Description:'It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.'
         },
         {
             id:2,
             img: require('../assets/bithree_removebg-preview.png'),
             name: 'Pina Mountai',
             price: '1600',
-            type: 2
+            type: 2,
+            Description:'It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.'
         },
         {
             id:3,
             img: require('../assets/bione-removebg-preview.png'),
             name: 'Pina Bike',
             price: '1500',
-            type: 1
+            type: 1,
+            Description:'It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.'
         },
         {
             id:4,
             img: require('../assets/bifour_-removebg-preview.png'),
             name: 'Pinarello',
             price: '1700',
-            type: 1
+            type: 1,
+            Description:'It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.'
         },
         {
             id:5,
             img: require('../assets/bitwo-removebg-preview.png'),
             name: 'Pinarello',
             price: '1850',
-            type: 2
+            type: 2,
+            Description:'It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.'
         },
         {
             id:6,
             img: require('../assets/bithree_removebg-preview.png'),
             name: 'Pinarello',
             price: '1300',
-            type: 2
+            type: 2,
+            Description:'It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.'
         }
     ]
 
@@ -113,7 +119,7 @@ export default function App({navigation,route}) {
                                     height: 200, width: 167, borderWidth: 1, marginLeft: 5, marginRight: 5, marginBottom: 10, borderRadius: 10,
                                     backgroundColor: '#F7BA8326', alignItems: 'center'
                                 }}
-                                onPress={()=>navigation.push('Screen3',{item:item})}
+                                onPress={()=>navigation.push('Screen3',{bike:item})}
                             >
                                 <Image
                                     source={item.img}
